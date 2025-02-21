@@ -214,6 +214,4 @@
       color: rgb(36, 36, 36);
     }
 
-    @media screen and (max-width: 768px) {
-      .skill_ex{flex-wrap: wrap;}
-    }
+    @media screen and (max-width: 768px) {.skill_ex{flex-wrap: wrap;}}
