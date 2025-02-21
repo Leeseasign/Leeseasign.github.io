@@ -59,8 +59,18 @@
     #intro {
       margin-top: 50px;
     }
-    #intro img {
-      margin: 2rem 0 1rem 0;
+    #intro .intro_img {
+      margin: 2rem auto 1rem auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+    }
+    #intro .intro_img img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     /* about */
@@ -116,10 +126,10 @@
       color: black;
     }
     .modal-footer>a {margin: 0;}
-    .modal-footer>a:nth-child(1) {background-color: #dbd9df; color: black;}
-    .modal-footer>a:nth-child(2) {background-color: black; color: white;}
-    .modal-footer>a:nth-child(1):hover {color: #dbd9df;background-color: rgb(116, 116, 116);}
-    .modal-footer>a:nth-child(2):hover {color: white;background-color: #313131;}
+    .modal-footer>a:nth-last-child(3) {background-color: #dbd9df; color: black;}
+    .modal-footer>a:nth-last-child(2) {background-color: black; color: white;}
+    .modal-footer>a:nth-last-child(3):hover {color: #dbd9df;background-color: rgb(116, 116, 116);}
+    .modal-footer>a:nth-last-child(2):hover {color: white;background-color: #313131;}
 
     /* contact */
     #contact {
@@ -139,4 +149,71 @@
     }
     #contact .contact-box {
       margin-top: 3rem;
+    }
+
+    .skill_ex{
+      margin-top: 3rem; 
+      padding: 1rem; 
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 12px;
+      background-color: rgb(235, 235, 235);
+    }
+    .skill_ex>div {
+      display: flex;
+      align-items: center;
+      margin: 0.5rem 0;
+    }
+    .skill_ex .ex{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-left: 1rem;
+      margin-right: 0.3rem;
+      border-radius: 50%;
+    }
+    .skill_box, .skill_content {
+      max-width: 400px;
+    }
+    .skill_content {
+      margin: 0 auto;
+    }
+    /* badge */
+    .skill_box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem 1rem;
+      margin: 0 auto;
+    }
+    .skill_badge {
+      display: flex;
+      width: fit-content;
+      padding: 0.5rem 1rem;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin: 4px;
+      border-radius: 30px;
+      color: white;
+    }
+    .front {
+      background-color: #802922;
+    }
+    .back {
+      background-color: #004040;
+    }
+    .manage {
+      background-color: #4A4633;
+    }
+    .design {
+      /* background-color: rgb(243, 240, 235); */
+      background-color: #BFBE9C;
+      color: rgb(36, 36, 36);
+    }
+
+    @media screen and (max-width: 768px) {
+      .skill_ex{flex-wrap: wrap;}
     }
