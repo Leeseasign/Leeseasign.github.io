@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Starbucks</title>
+  <link rel="shortcut icon" href="images/starbucks_logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/e7c9242ec2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- 비디오 백그라운드 -->
+  <div class="video-background">
+    <div class="video-foreground">
+      <!-- controls=0 컨트롤 바가 안나오게 / 1은 나오게 -->
+      <!-- showinfo -->
+      <!-- rel 관련영상 -->
+      <!-- playlist 플레이재생목록 (,)콤마를 사용하여 열거할 수 있다. -->
+      <!-- loop & muted는 같이 사용해서 반복재생 됨 -->
+      <!-- <iframe src="https://www.youtube.com/embed/eMB0G_ZH1v4?disablekb=1;controls=0&rel=0&autoplay=1&loop=1&mute=1&playlist=eMB0G_ZH1v4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+      
+      <video id="sb_video" autoplay muted loop>
+        <source src="media/starbucks.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- 로고 -->
+  <nav>
+    <div class="logo">
+      <h1>
+        <img src="images/starbucks_logo.png" alt="스타벅스 로고" width="160px">
+        <div class="title_box">
+          <p class="title">STARBUCKS</p>
+        </div>
+      </h1>
+      <div class="bubble bub1"></div>
+      <div class="bubble bub2"></div>
+  
+      <!-- 네비게이션 -->
+      <aside class="nav">
+        <ul>
+          <li>
+            <h2 class="main"><a href="#">MENU</a></h2>
+            <ul class="sub">
+              <li><a href="#">Drinks</a></li>
+              <li><a href="#">Food</a></li>
+              <li><a href="#">At Home Coffe</a>e</li>
+              <li><a href="#">Merchandise</a></li>
+            </ul>
+          </li>
+          <li><h2 class="main"><a href="#">STORE</a></h2>
+            <ul class="sub">
+              <li><a href="#">Nearby Store</a></li>
+              <li><a href="#">Drive Thru Store</a></li>
+              <li><a href="#">Reserve Store</a></li>
+              <li><a href="#">Community Store</a></li>
+            </ul>
+          </li>
+          <li><h2 class="main"><a href="#">REWARD</a></h2>
+            <ul class="sub">
+              <li><a href="#">Reword</a></li>
+              <li><a href="#">Card</a></li>
+              <li><a href="#">Mobile Card</a>e</li>
+            </ul>
+          </li>
+          <li><h2 class="main"><a href="#">NEW</a></h2>
+            <ul class="sub">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Notice</a></li>
+              <li><a href="#">Event</a></li>
+              <li><a href="#">Wallpaper</a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+    </nav>
+  </div>
+  <!-- 애니메이션 효과를 주기위한 logo back -->
+  <!-- logo class의 css를 그대로 사용하기 위함 -->
+  <div class="logo"></div>
+
+  <header>
+    <ul class="sub_nav">
+      <li>
+        <p><i class="fa-solid fa-earth-asia"></i>Language</p>
+        <ul class="lan_sub">
+          <li><a href="#">English</a></li>
+          <li><a href="#">한국어</a></li>
+          <!-- <li><a href="#"><em><b>日本語</b></em></a></li>
+          <li><a href="#"><em><b>中文</b></em></a></li> -->
+        </ul>
+      </li>
+      <li><a href="#">
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        Sign In
+      </a></li>
+    </ul>
+  </header>
+
+  <div id="container">
+    <!-- main content -->
+    <section class="main_box">
+      <div class="content">
+        <h3>
+          <div>
+            <span>WELCOME TO</span>
+          </div>
+          <span>STARBUCKS</span>
+        </h3>
+        <a href="#">MORE</a>
+      </div>
+    </section>
+
+    <!-- sub content -->
+    <section class="sub_box">
+      <img class="coffee_img" src="images/cheese_cake.png" alt="coffee">
+      <div class="coffee_box">
+        <div class="coffee_info">
+          True value of a brand that knows coffee.
+        </div>
+      </div>
+      <div class="list_menu">
+        <ul>
+          <li><a href="#">
+            <span>COFFEE</span>
+            <div class="list_bg"></div>
+            <img src="images/coffee.png" alt="coffee">
+          </a></li>
+          <li><a href="#">
+            <span>FOOD</span>
+            <img src="images/food.png" alt="food">
+          </a></li>
+          <li><a href="#">
+            <span>REWARD</span>
+            <img src="images/rewoard.png" alt="store">
+          </a></li>
+          <li><a href="#">
+            <span>STORE</span>
+            <img src="images/shop.png" alt="reward">
+          </a></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <ul class="icons">
+      <li><i class="fa-brands fa-youtube"></i></li>
+      <li><i class="fa-brands fa-instagram"></i></li>
+    </ul>
+    <p>starbucks coffee company. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
