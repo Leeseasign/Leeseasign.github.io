@@ -24,7 +24,7 @@ $(document).ready(function(){
 
   // 스크롤 이벤트
   $(window).scroll(function(){
-    let scrollPosition = $(window).scrollTop(); // 현재 스크롤바 위치
+    let scrollPosition = $(window).scrollTop(); // 현재 스크롤바 위치 
     navActive();
     if(winWidth > 979){
       if(scrollPosition > 100){
