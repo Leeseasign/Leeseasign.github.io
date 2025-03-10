@@ -8,23 +8,25 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/main.js"></script>
 </head>
 <body>
   <!-- navigat -->
   <nav class="navbar navbar-default">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
         <!-- <span class="glyphicon glyphicon-home"></span> -->
-        HAEIN
+        GLOBAL IT<p>JOURNAL</p>
       </a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse animate__animated" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
@@ -33,19 +35,54 @@
     </div>
   </nav>
 
-  <section id="intro" class="container-fluid bg-1 text-center">
-    <h1>HAEIN</h1>
-    <div class="intro_img">
-      <img class="img-circle" src="img/profile.webp" alt="profile" height="200px">
+  <section id="intro" class="container-fluid text-center">
+    <div class="intro">
+      <h1>HAEIN</h1>
+      <div class="intro_img">
+        <img class="img-circle" src="img/profile.webp" alt="profile" height="200px">
+      </div>
+      <!-- <h2>Introduce</h2> -->
+      <!-- <p>Hello World!</p> -->
+      <p>Global IT 인재개발원 K-Digital-Traning 일지</p>
+      <div>
+        <h4><strong>과정</strong></h4>
+        <ol>
+          <li>웹 개발 기본 프로그래밍</li>
+          <li>프론트엔드 서비스 기술</li>
+          <li>데이터 처리 기술</li>
+          <li>백엔드 서비스 기술</li>
+          <li>프레임워크 서비스 기술</li>
+          <li>모바일 서비스 기술</li>
+          <li>리눅스 OS 기술</li>
+          <li>취업 컨설팅</li>
+          <li>CEO 특강</li>
+          <li>총 4개의 프로젝트 및 발표</li>
+        </ol>
+      </div>
+      <strong>2025.01-2025.07</strong>
     </div>
-    <h2>Introduce</h2>
-    <p>Hello World!</p>
-    <p><p>Global IT 인재개발원 K-Digital-Traning 일지</p></p>
+    <div class="skills">
+      <h2>SKILLS</h2>
+      <div>
+        <h3>Front</h3>
+        <div>HTML5, CSS3, JavaScript, jQuery, TypeScript, React, ReactHook, Redux, VueJs, Vuex</div>
+        <h3>Back</h3>
+        <div>Python, Django, DjangoRestAPI, NodeJs, Postman, Swagger</div>
+        <h3>Data</h3>
+        <div>Oracle, MySQL, MongoDB, Sqlite3</div>
+        <h3>Management</h3>
+        <div>Git, GitHub, GitLab, Notion, Slack, Jira</div>
+        <h3>Server&Hosting</h3>
+        <div>Heroku, Netlify, AWS</div>
+        <h3>Design</h3>
+        <div>Figma, Tailwind, Bootstrap</div>
+      </div>
+    </div>
   </section>
 
   <!-- about -->
-  <section id="about" class="container-fluid bg-2 text-center">
-    <h3>Who am I?</h3>
+  <section id="about" class="container-fluid text-center">
+    <h3 class="title">Who am I?</h3>
     <div class="container">
       <p>
         4년제 미술대학 전공 후
@@ -60,13 +97,13 @@
   </section>
 
   <!-- portfolio -->
-  <section id="portfolio" class="container-fluid bg-3 text-center">
-    <h3>Portfolio</h3>
+  <section id="portfolio" class="container-fluid text-center">
+    <h3 class="title">Portfolio</h3>
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3">
         <div class="pjt_title">
           <div>
-            <span class="label label-warning label-pjt">Toy</span>
+            <span class="label label-pjt">Toy</span>
             브랜드홍보
           </div>
           <span class="label label-default label-date">2025.01</span>
@@ -121,7 +158,7 @@
       <div class="col-xs-12 col-sm-6 col-md-3">
         <div class="pjt_title">
           <div>
-            <span class="label label-warning label-pjt">Toy</span>
+            <span class="label label-pjt">Toy</span>
             쿠팡이츠
           </div>
           <span class="label label-default label-date">2025.02</span></div>
@@ -182,7 +219,7 @@
       <div class="col-xs-12 col-sm-6 col-md-3">
         <div class="pjt_title">
           <div>
-            <span class="label label-warning label-pjt">Mini</span>
+            <span class="label label-pjt">Mini</span>
             카카오뱅크
           </div>
           <span class="label label-default label-date">2025.02</span></div>
@@ -243,7 +280,7 @@
       <div class="col-xs-12 col-sm-6 col-md-3">
         <div class="pjt_title">
           <div>
-            <span class="label label-warning label-pjt">Mini</span>
+            <span class="label label-pjt">Mini</span>
             PJT-2 
           </div>
           <span class="label label-default label-date">2025.00</span>
@@ -303,7 +340,7 @@
       <div class="col-xs-12 col-sm-6 col-md-3">
         <div class="pjt_title">
           <div>
-            <span class="label label-warning label-pjt">Final</span>
+            <span class="label label-pjt">Final</span>
             Final PJT 
           </div>
           <span class="label label-default label-date">2025.00</span></div>
@@ -365,7 +402,7 @@
     <!-- contact -->
     <div id="contact" class="container-fluid">
       <div class="container">
-        <h3>Contact</h3>
+        <h3 class="title">Contact</h3>
         <div class="contact-box">
           <a href="https://seasign10.github.io/" target="_blank">
             <span class="glyphicon glyphicon-home"></span>
@@ -381,7 +418,7 @@
       </div>
     </div>
 
-    <footer class="container-fluid bg-4 text-center">
+    <footer class="container-fluid text-center">
       <p>&copy; All rights reserved by Lee hae in.</p>
     </footer>
 </body>
