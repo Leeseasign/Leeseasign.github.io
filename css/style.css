@@ -54,7 +54,7 @@ h3.title {
 .navbar {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
   border-radius: 0;
   padding: 1.5rem 1rem;
@@ -200,7 +200,6 @@ ul.skills_content,.skills_content>li {list-style: none;margin: 0; padding-left: 
 .learn {display: flex; align-items: center;}
 .study, .learn_mark {background-color: #403C3A; color: #F2F2F2;display: inline-block;padding: 2px 4px 0 4px; margin-top: 2px;}
 .skills_box {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
@@ -223,6 +222,7 @@ ul.skills_content,.skills_content>li {list-style: none;margin: 0; padding-left: 
 #portfolio {
   padding-top: 130px;
   transition: all 0.5s ease-in-out;
+  overflow-x: hidden;
 }
 .img_where {
   border-radius: 12px;
@@ -394,4 +394,4 @@ footer {
 }
 @media screen and (max-width: 768px) {.skill_ex{flex-wrap: wrap;}}
 @media (min-width: 640px) and (max-width: 768px) {.pjt_img {height: 400px;}}
-@media screen and (max-width: 512px) {.navbar-brand{font-size: 36px;text-align: start;top: 1rem;}}
+@media screen and (max-width: 512px) {.navbar-brand{font-size: 36px;text-align: start;top: 1rem;}.contact{flex-direction: column;}}
