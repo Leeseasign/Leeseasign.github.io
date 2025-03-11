@@ -475,4 +475,11 @@ footer {
 }
 @media screen and (max-width: 768px) {.skill_ex{flex-wrap: wrap;}}
 @media (min-width: 640px) and (max-width: 768px) {.pjt_img {height: 400px;}}
-@media screen and (max-width: 512px) {.navbar-brand{font-size: 36px;text-align: start;top: 1rem;}.contact{flex-direction: column;}}
+@media screen and (max-width: 512px) {
+  .navbar-brand{font-size: 36px;text-align: start;top: 1rem;}
+  .contact{flex-direction: column;}
+  .who_list {height: 80px;}
+  .who_list li {width: 50px; min-width: 60px;}
+  .notion i {font-size: 20px;}
+  .notion p {font-size: 11px;}
+}
