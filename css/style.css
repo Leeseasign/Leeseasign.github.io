@@ -25,6 +25,12 @@ body {
   background: linear-gradient(70deg, #F2F2F2 70%, #D9D5D2);
   color: #403C3A;
 }
+
+::selection {
+  background: #A6A3A1;
+  color: #F2F2F2;
+}
+
 h3.title {
   margin-bottom: 4rem;
   font-size: 52px;
