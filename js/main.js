@@ -80,70 +80,13 @@ $(document).ready(function() {
   });
 
   // 모달 자동재생
-  $('#pjt00-Modal').on('shown.bs.modal', function () {
+  $('[id^="pjt"][id$="-Modal"]').on('shown.bs.modal', function () {
     const video = $(this).find('video')[0];
     if (video) {
       video.play();
     }
   });
-  
-  $('#pjt00-Modal').on('hidden.bs.modal', function () {
-    const video = $(this).find('video')[0];
-    if (video) {
-      video.pause();
-      video.currentTime = 0; // 비디오를 처음으로 리셋
-    }
-  });
-  $('#pjt01-Modal').on('shown.bs.modal', function () {
-    const video = $(this).find('video')[0];
-    if (video) {
-      video.play();
-    }
-  });
-  
-  $('#pjt01-Modal').on('hidden.bs.modal', function () {
-    const video = $(this).find('video')[0];
-    if (video) {
-      video.pause();
-      video.currentTime = 0; // 비디오를 처음으로 리셋
-    }
-  });
-  $('#pjt02-Modal').on('shown.bs.modal', function () {
-    const video = $(this).find('video')[0];
-    if (video) {
-      video.play();
-    }
-  });
-  
-  $('#pjt02-Modal').on('hidden.bs.modal', function () {
-    const video = $(this).find('video')[0];
-    if (video) {
-      video.pause();
-      video.currentTime = 0; // 비디오를 처음으로 리셋
-    }
-  });
-  $('#pjt03-Modal').on('shown.bs.modal', function () {
-    const video = $(this).find('video')[0];
-    if (video) {
-      video.play();
-    }
-  });
-  
-  $('#pjt03-Modal').on('hidden.bs.modal', function () {
-    const video = $(this).find('video')[0];
-    if (video) {
-      video.pause();
-      video.currentTime = 0; // 비디오를 처음으로 리셋
-    }
-  });
-  $('#pjt04-Modal').on('shown.bs.modal', function () {
-    const video = $(this).find('video')[0];
-    if (video) {
-      video.play();
-    }
-  });
-  
-  $('#pjt04-Modal').on('hidden.bs.modal', function () {
+  $('[id^="pjt"][id$="-Modal"]').on('hidden.bs.modal', function () {
     const video = $(this).find('video')[0];
     if (video) {
       video.pause();
