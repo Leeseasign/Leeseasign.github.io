@@ -46,15 +46,16 @@ $(document).ready(function() {
       });
     }
     if(scrollTop+windowHeight >= portfolioBottom-(portfolioOuter/1.2)){
-      $('#portfolio').css({
+      $('#portfolio>.title, #portfolio>.row').css({
         opacity: 1, 
         transform: 'translateX(0px) skewX(0deg)',
       });
     }else{
-      $('#portfolio').css({
+      $('#portfolio>.title, #portfolio>.row').css({
         opacity: 0,
         transform: 'translateX(-100px) skewX(10deg)',
       });
+      console.log($('#portfolio>.row'));
     }
     if(scrollTop+windowHeight >= contactBottom-(contactOuter/2)){
       $('#contact').css({

@@ -25,6 +25,9 @@ body {
   background: linear-gradient(70deg, #F2F2F2 70%, #D9D5D2);
   color: #403C3A;
   overflow-x: hidden;
+  max-width: 100vw;
+  /* transform 밖으로 나가는걸 막음 */
+  position: relative; 
 }
 .container-fluid{overflow-x: hidden;}
 
@@ -298,8 +301,10 @@ ul.skills_content,.skills_content>li {list-style: none;margin: 0; padding-left: 
 /* portfolio */
 #portfolio {
   padding-top: 130px;
-  transition: all 0.5s ease-in-out;
   overflow-x: hidden;
+}
+#portfolio>.title, #portfolio>.row {
+  transition: all 0.4s ease-in-out;
 }
 .img_where {
   border-radius: 12px;
