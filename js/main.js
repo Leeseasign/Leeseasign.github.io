@@ -49,12 +49,12 @@ $(document).ready(function() {
       $('#portfolio').css({
         opacity: 1, 
         // transform 이 bootstrap modal과 충돌
-        // transform: 'translateX(0px) skewX(0deg)',
+        transform: 'translateX(0px) skewX(0deg)',
       });
     }else{
       $('#portfolio').css({
         opacity: 0,
-        // transform: 'translateX(-100px) skewX(10deg)',
+        transform: 'translateX(-100px) skewX(10deg)',
       });
     }
     if(scrollTop+windowHeight >= contactBottom-(contactOuter/2)){
