@@ -47,7 +47,8 @@ $(document).ready(function() {
     }
     if(scrollTop+windowHeight >= portfolioBottom-(portfolioOuter/1.2)){
       $('#portfolio').css({
-        opacity: 1,
+        opacity: 1, 
+        // transform 이 bootstrap modal과 충돌
         transform: 'translateX(0px) skewX(0deg)',
       });
     }else{
