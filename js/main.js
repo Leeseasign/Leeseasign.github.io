@@ -48,13 +48,12 @@ $(document).ready(function() {
     if(scrollTop+windowHeight >= portfolioBottom-(portfolioOuter/1.2)){
       $('#portfolio').css({
         opacity: 1, 
-        // transform 이 bootstrap modal과 충돌
-        // transform: 'translateX(0px) skewX(0deg)',
+        transform: 'translateX(0px) skewX(0deg)',
       });
     }else{
       $('#portfolio').css({
         opacity: 0,
-        // transform: 'translateX(-100px) skewX(10deg)',
+        transform: 'translateX(-100px) skewX(10deg)',
       });
     }
     if(scrollTop+windowHeight >= contactBottom-(contactOuter/2)){
@@ -76,6 +75,78 @@ $(document).ready(function() {
     if ($(window).width() > 767) {
       $('.navbar-collapse.collapse').removeClass('in');
       $('.navbar-toggle').css('transform', 'rotate(0deg)');
+    }
+  });
+
+  // 모달 자동재생
+  $('#pjt00-Modal').on('shown.bs.modal', function () {
+    const video = $(this).find('video')[0];
+    if (video) {
+      video.play();
+    }
+  });
+  
+  $('#pjt00-Modal').on('hidden.bs.modal', function () {
+    const video = $(this).find('video')[0];
+    if (video) {
+      video.pause();
+      video.currentTime = 0; // 비디오를 처음으로 리셋
+    }
+  });
+  $('#pjt01-Modal').on('shown.bs.modal', function () {
+    const video = $(this).find('video')[0];
+    if (video) {
+      video.play();
+    }
+  });
+  
+  $('#pjt01-Modal').on('hidden.bs.modal', function () {
+    const video = $(this).find('video')[0];
+    if (video) {
+      video.pause();
+      video.currentTime = 0; // 비디오를 처음으로 리셋
+    }
+  });
+  $('#pjt02-Modal').on('shown.bs.modal', function () {
+    const video = $(this).find('video')[0];
+    if (video) {
+      video.play();
+    }
+  });
+  
+  $('#pjt02-Modal').on('hidden.bs.modal', function () {
+    const video = $(this).find('video')[0];
+    if (video) {
+      video.pause();
+      video.currentTime = 0; // 비디오를 처음으로 리셋
+    }
+  });
+  $('#pjt03-Modal').on('shown.bs.modal', function () {
+    const video = $(this).find('video')[0];
+    if (video) {
+      video.play();
+    }
+  });
+  
+  $('#pjt03-Modal').on('hidden.bs.modal', function () {
+    const video = $(this).find('video')[0];
+    if (video) {
+      video.pause();
+      video.currentTime = 0; // 비디오를 처음으로 리셋
+    }
+  });
+  $('#pjt04-Modal').on('shown.bs.modal', function () {
+    const video = $(this).find('video')[0];
+    if (video) {
+      video.play();
+    }
+  });
+  
+  $('#pjt04-Modal').on('hidden.bs.modal', function () {
+    const video = $(this).find('video')[0];
+    if (video) {
+      video.pause();
+      video.currentTime = 0; // 비디오를 처음으로 리셋
     }
   });
 

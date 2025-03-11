@@ -26,6 +26,7 @@ body {
   color: #403C3A;
   overflow-x: hidden;
 }
+.container-fluid{overflow-x: hidden;}
 
 ::selection {
   background: #A6A3A1;
