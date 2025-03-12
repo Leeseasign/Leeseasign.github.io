@@ -6,11 +6,25 @@
 }
 @font-face {
   font-family: "Jeju Myungjo KR";
-  src: url("/font/JejuMyungjo.ttf");
+  src: url("../font/JejuMyungjo.ttf");
 }
 @font-face {
   font-family: "Jeju Hallasan KR";
   src: url("../font/JejuHallasan.ttf");
+}
+
+*{
+  cursor: url('../img/icon/pen-fancy-solid.png')3 50, auto;
+}
+.allow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #33302f21;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.2s ease;
 }
 
 html {
