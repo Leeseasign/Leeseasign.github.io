@@ -16,16 +16,22 @@ $(document).ready(function() {
     // 0.5초 후에 점의 opacity를 0으로 설정
     setTimeout(function() {
       cursor.css({
-        opacity: 0,
         width: '0px',
         height: '0px'
       });
-    }, 200); // 즉시 opacity를 0으로 설정
+    }, 300); // 즉시 opacity를 0으로 설정
+    // 0.2초 후에 점의 width, height를 0으로 설정
+    setTimeout(function() {
+      cursor.css({
+        width: '0px',
+        height: '0px'
+      });
+    }, 200);
 
-    // 0.5초 후에 점을 제거
+    // 0.8초 후에 점을 제거
     setTimeout(function() {
         cursor.remove();
-    }, 800); // 0.5초 후에 점 제거
+    }, 800); // 0.8초 후에 점 제거
   });
 
   // scroll

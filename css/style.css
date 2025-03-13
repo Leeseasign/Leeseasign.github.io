@@ -16,15 +16,20 @@
 *{
   cursor: url('../img/icon/pen-fancy-solid.png')3 50, auto;
 }
+a:hover{
+  cursor: url('../img/icon/pen-fancy-solid.png')3 50, auto;
+}
 .allow {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: #33302f21;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  width: 4px;
+  height: 4px;
+  background-color: #ffffffe3;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.925);
   position: absolute;
   border-radius: 50%;
-  transition: all 0.2s ease;
+  transition: opacity 0.3s ease, height 0.2s ease, width 0.2s ease;
+  /* transition: all 0.5s; */
+  pointer-events: none;
 }
 
 html {
