@@ -17,7 +17,11 @@
   cursor: url('../img/icon/pen-fancy-solid.png')3 50, auto;
 }
 a:hover{
-  cursor: url('../img/icon/pen-fancy-solid.png')3 50, auto;
+  /* cursor: url('../img/icon/pen-fancy-solid.png')3 50, auto; */
+  cursor: url('../img/icon/check-solid.png')20 50, auto;
+}
+a *:hover{
+  cursor: url('../img/icon/check-solid.png')20 50, auto;
 }
 .allow {
   display: inline-block;

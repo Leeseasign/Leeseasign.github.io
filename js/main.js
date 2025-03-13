@@ -37,12 +37,12 @@ $(document).ready(function() {
 
   // let clickDown;
   // 마우스 누르는 동안 event
-  $(document).on('mousedown', function(e) {
-    $('*').css('cursor', 'url(../img/icon/check-solid.png)20 50, auto');
-  });
-  $(document).on('mouseup', function(e) {
-    $('*').css('cursor', 'url(../img/icon/pen-fancy-solid.png)3 50, auto');
-  });
+  // $(document).on('mousedown', function(e) {
+  //   $('*').css('cursor', 'url(../img/icon/check-solid.png)20 50, auto');
+  // });
+  // $(document).on('mouseup', function(e) {
+  //   $('*').css('cursor', 'url(../img/icon/pen-fancy-solid.png)3 50, auto');
+  // });
 
   // scroll
   let scrollHeight = $(window).scrollTop(); // reloade했을 때의 scrollHeight  
