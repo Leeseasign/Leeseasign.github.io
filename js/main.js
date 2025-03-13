@@ -1,9 +1,11 @@
 $(document).ready(function() {
 
+  // cursor
+  let mouseX;
+  let mouseY;
   $(document).on('mousemove', function(e) {
-    let mouseX = e.pageX-4;
-    let mouseY = e.pageY-150;
-
+    mouseX = e.pageX-4;
+    mouseY = e.pageY-150;
     // 새로운 점 생성(잔상)
     let cursor = $('<div class="allow"></div>');
     cursor.css({
@@ -16,8 +18,7 @@ $(document).ready(function() {
     // 0.5초 후에 점의 opacity를 0으로 설정
     setTimeout(function() {
       cursor.css({
-        width: '0px',
-        height: '0px'
+        opacity: 0
       });
     }, 300); // 즉시 opacity를 0으로 설정
     // 0.2초 후에 점의 width, height를 0으로 설정
@@ -32,6 +33,15 @@ $(document).ready(function() {
     setTimeout(function() {
         cursor.remove();
     }, 800); // 0.8초 후에 점 제거
+  });
+
+  // let clickDown;
+  // 마우스 누르는 동안 event
+  $(document).on('mousedown', function(e) {
+    $('*').css('cursor', 'url(../img/icon/check-solid.png)20 50, auto');
+  });
+  $(document).on('mouseup', function(e) {
+    $('*').css('cursor', 'url(../img/icon/pen-fancy-solid.png)3 50, auto');
   });
 
   // scroll
@@ -94,7 +104,6 @@ $(document).ready(function() {
         opacity: 0,
         transform: 'translateX(-100px) skewX(10deg)',
       });
-      console.log($('#portfolio>.row'));
     }
     if(scrollTop+windowHeight >= contactBottom-(contactOuter/2)){
       $('#contact').css({
