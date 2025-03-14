@@ -116,6 +116,12 @@ $(document).ready(function() {
         transform: 'translateY(-50px)'
       });
     }
+
+    // 문서 전체 높이
+    const documentHeight = $(document).height();
+    // 스크롤된 비율을 퍼센트로 계산
+    const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+    $('.scroll_per').css('width', scrollPercent + 'vw');
   });
 
   //resize
