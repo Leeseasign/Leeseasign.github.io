@@ -3,6 +3,28 @@ $(document).ready(function() {
   // cursor
   let mouseX;
   let mouseY;
+  $(document).on('click', function(e) {
+    mouseX = e.pageX-4;
+    mouseY = e.pageY-150;
+    // 클릭하면 firework 생성
+    let firework = $('<div class="firework"></div>');
+    console.log(firework);
+    
+    firework.css({
+        top: mouseY + 'px',
+        left: mouseX + 'px'
+    });
+
+    // 애니메이션 클래스 추가
+    firework.addClass('firework-animation'); // 애니메이션 클래스 추가
+
+    // body에 firework 추가
+    $('body').append(firework);
+    // 1초 후에 firework 삭제
+    setTimeout(function() {
+        firework.remove();
+    }, 2000);
+  });
   $(document).on('mousemove', function(e) {
     mouseX = e.pageX-4;
     mouseY = e.pageY-150;
