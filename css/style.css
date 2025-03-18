@@ -20,7 +20,7 @@ a:hover, a *:hover, [type="button"]:hover, [type="submit"]:hover, button:hover{
   /* cursor: url('../img/icon/pen-fancy-solid.png')3 50, auto; */
   cursor: url('../img/icon/check-solid.png')12 50, auto;
 }
-
+.body_container{overflow: hidden;}
 .allow {
   display: inline-block;
   width: 4px;

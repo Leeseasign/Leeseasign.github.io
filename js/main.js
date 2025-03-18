@@ -8,7 +8,6 @@ $(document).ready(function() {
     mouseY = e.pageY-150;
     // 클릭하면 firework 생성
     let firework = $('<div class="firework"></div>');
-    console.log(firework);
     
     firework.css({
         top: mouseY + 'px',
